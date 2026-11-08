@@ -5,12 +5,19 @@
   const DPR = Math.min(window.devicePixelRatio || 1, 2);
 
   // ---------- Smooth scroll ----------
+  // Lenis loads after the first frame is on screen: smooth scroll is a nicety, not a blocker.
   let lenis = null;
-  if (!reduce && window.Lenis) {
-    lenis = new Lenis({ lerp: 0.09, smoothWheel: true });
-    window.__lenis = lenis;
-    const raf = (t) => { lenis.raf(t); requestAnimationFrame(raf); };
-    requestAnimationFrame(raf);
+  if (!reduce) {
+    const s = document.createElement('script');
+    s.src = 'https://unpkg.com/lenis@1.1.13/dist/lenis.min.js';
+    s.async = true;
+    s.onload = () => {
+      lenis = new Lenis({ lerp: 0.09, smoothWheel: true });
+      window.__lenis = lenis;
+      const raf = (t) => { lenis.raf(t); requestAnimationFrame(raf); };
+      requestAnimationFrame(raf);
+    };
+    document.head.appendChild(s);
   }
 
   // ---------- Sequences ----------
