@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Олива — имплантация и эстетика зубов в Барнауле (демо)</title>
+<meta name="description" content="Демо-сайт вымышленной стоматологической клиники «Олива»: имплантация, виниры, лечение и гигиена в Барнауле. Сделан студией Valora.">
+<meta property="og:title" content="Олива — имплантация и эстетика зубов (демо-сайт)">
+<meta property="og:description" content="Демо-сайт стоматологии с кинематографичной прокруткой. Клиника вымышлена.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Prata&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="preload" as="image" href="frames/hero/d/0001.webp" media="(min-aspect-ratio: 1/1)">
+<link rel="preload" as="image" href="frames/hero/m/0001.webp" media="(max-aspect-ratio: 1/1)">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top" id="top">
+  <a class="logo" href="#top" aria-label="Олива, на главную">Олива</a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#services">Услуги</a>
+    <a href="#tech">Как планируем</a>
+    <a href="#doctors">Врачи</a>
+    <a href="#prices">Цены</a>
+  </nav>
+  <a class="btn btn-small js-book" href="#book">Записаться</a>
+</header>
+
+<main>
+
+  <!-- 1. Hero: implant assembles in a beam of light, scrubbed by scroll -->
+  <section class="scrub scrub-hero" data-seq="hero" data-d="120" data-m="72" data-bg="#000" style="--len: 340vh">
+    <div class="scrub-stage">
+      <canvas class="scrub-canvas" aria-hidden="true"></canvas>
+      <div class="shade-bottom" aria-hidden="true"></div>
+      <div class="veil veil-light" data-fade="0.82 1"></div>
+
+      <div class="layer hero-intro" data-show="0 0.26">
+        <p class="kicker">Имплантация и эстетика зубов в Барнауле</p>
+        <h1 class="display">Имплантация,<br>сделанная как&nbsp;ювелирная работа</h1>
+        <p class="lead">Планируем по 3D-снимку, коронку подбираем под оттенок ваших зубов. Консультация с планом лечения — бесплатно.</p>
+        <div class="actions">
+          <a class="btn js-book" href="#book">Записаться на консультацию</a>
+          <a class="link" href="#prices">Цены</a>
+        </div>
+      </div>
+
+      <div class="layer hero-spec hero-spec-a" data-show="0.32 0.56">
+        <p class="spec-num">0,1 мм</p>
+        <p class="spec-text">с такой точностью проверяем посадку коронки на 3D-модели — ещё до того, как вы сядете в кресло</p>
+      </div>
+      <div class="layer hero-spec hero-spec-b" data-show="0.58 0.8">
+        <p class="spec-num">Титан и цирконий</p>
+        <p class="spec-text">из них делают импланты и коронки ведущие клиники мира — у нас те же системы, с паспортом на каждый имплант</p>
+      </div>
+
+      <p class="scroll-hint" data-show="0 0.06">Листайте</p>
+    </div>
+  </section>
+
+  <!-- 2. Out of the light into the clinic -->
+  <section class="scrub scrub-clinic" data-seq="clinic" data-d="96" data-m="60" data-bg="#f3f0ea" style="--len: 260vh">
+    <div class="scrub-stage">
+      <canvas class="scrub-canvas" aria-hidden="true"></canvas>
+      <div class="veil veil-light veil-in" data-fade-out="0 0.12"></div>
+      <div class="layer shade-left" data-show="0.14 0.62" aria-hidden="true"></div>
+      <div class="layer clinic-text" data-show="0.14 0.62">
+        <h2 class="display display-md">Светлый кабинет, один врач от&nbsp;плана до&nbsp;коронки</h2>
+      </div>
+      <div class="layer clinic-facts" data-show="0.6 1.01">
+        <p><b>Без очереди в коридоре.</b> Приём по времени, следующий пациент не ждёт под дверью.</p>
+        <p><b>План на бумаге.</b> Этапы, сроки и смета — до начала лечения, без доплат по ходу.</p>
+        <p><b>Седация по желанию.</b> Если боитесь, лечим в полусне под контролем анестезиолога.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Services -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <h2 class="display display-md section-title">Что мы делаем</h2>
+
+      <article class="service">
+        <figure class="service-img"><img src="img/implant.webp" alt="Титановый имплант с циркониевой коронкой в луче света" loading="lazy" width="1376" height="768"></figure>
+        <div class="service-body">
+          <h3>Имплантация</h3>
+          <p>Восстанавливаем один зуб или весь ряд. Имплант ставим по хирургическому шаблону, напечатанному по вашему снимку, — без разрезов «на глаз».</p>
+          <p class="price">от 45 000 ₽ <span>под ключ, с коронкой</span></p>
+        </div>
+      </article>
+
+      <article class="service service-flip">
+        <figure class="service-img"><img src="img/veneers.webp" alt="Фарфоровые виниры на травертине" loading="lazy" width="1376" height="768"></figure>
+        <div class="service-body">
+          <h3>Виниры и эстетика</h3>
+          <p>Сначала примеряете будущую улыбку во рту — пластиковым макетом. Только когда нравится в зеркале, делаем керамику.</p>
+          <p class="price">от 28 000 ₽ <span>за зуб</span></p>
+        </div>
+      </article>
+
+      <div class="service-pair">
+        <article class="service-mini">
+          <h3>Лечение</h3>
+          <p>Кариес, каналы под микроскопом, реставрации. Сначала снимок и объяснение, потом бормашина.</p>
+          <p class="price">от 4 900 ₽</p>
+        </article>
+        <article class="service-mini">
+          <h3>Гигиена</h3>
+          <p>Ультразвук, Air Flow, полировка. Час без спешки и подробный разбор, где чистите хуже всего.</p>
+          <p class="price">от 5 500 ₽</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Technology: rotating arch -->
+  <section class="scrub scrub-tech" id="tech" data-seq="arch" data-d="90" data-m="60" data-mobile-zoom="2.3" data-bg="#e9e6e1" style="--len: 230vh">
+    <div class="scrub-stage">
+      <canvas class="scrub-canvas" aria-hidden="true"></canvas>
+      <div class="layer tech-title" data-show="0 0.34">
+        <h2 class="display display-md">Сначала модель.<br>Потом лечение.</h2>
+      </div>
+      <ol class="layer tech-steps" data-show="0.3 1.01">
+        <li data-show="0.3 1.01"><b>3D-снимок и скан</b> вместо слепочной массы. Пять минут, без рвотного рефлекса.</li>
+        <li data-show="0.5 1.01"><b>Цифровая модель</b> ваших зубов: на ней врач ставит имплант виртуально и показывает вам результат.</li>
+        <li data-show="0.7 1.01"><b>Шаблон и коронка</b> печатаются по этой же модели, поэтому в кресле всё совпадает с планом.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 5. Doctors -->
+  <section class="doctors" id="doctors">
+    <div class="wrap">
+      <h2 class="display display-md section-title">Врачи</h2>
+      <div class="doctor-grid">
+        <figure class="doctor">
+          <img src="img/doctor-1.webp" alt="Хирург-имплантолог Андрей Соколов (демо)" loading="lazy" width="600" height="800">
+          <figcaption><b>Андрей Соколов</b> хирург-имплантолог, 19 лет практики, больше 3 000 имплантов</figcaption>
+        </figure>
+        <figure class="doctor doctor-offset">
+          <img src="img/doctor-2.webp" alt="Врач-эстетист Мария Левина (демо)" loading="lazy" width="600" height="800">
+          <figcaption><b>Мария Левина</b> стоматолог-ортопед, виниры и эстетические реставрации</figcaption>
+        </figure>
+      </div>
+      <p class="note">Врачи на демо-сайте вымышлены, портреты сгенерированы.</p>
+    </div>
+  </section>
+
+  <!-- 6. Prices -->
+  <section class="prices" id="prices">
+    <div class="wrap">
+      <h2 class="display display-md section-title">Цены</h2>
+      <table class="price-table">
+        <tbody>
+          <tr><th scope="row">Консультация с планом лечения и 3D-снимком</th><td>бесплатно</td></tr>
+          <tr><th scope="row">Имплант с установкой</th><td>от 32 000 ₽</td></tr>
+          <tr><th scope="row">Коронка из циркония на имплант</th><td>от 21 000 ₽</td></tr>
+          <tr><th scope="row">Все зубы на четырёх имплантах</th><td>от 290 000 ₽</td></tr>
+          <tr><th scope="row">Керамический винир</th><td>от 28 000 ₽</td></tr>
+          <tr><th scope="row">Лечение кариеса</th><td>от 4 900 ₽</td></tr>
+          <tr><th scope="row">Профессиональная гигиена</th><td>от 5 500 ₽</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Цены демонстрационные. Итоговая стоимость — после осмотра, в письменном плане лечения.</p>
+    </div>
+  </section>
+
+  <!-- 7. Reviews -->
+  <section class="reviews">
+    <div class="wrap">
+      <h2 class="display display-md section-title">Что говорят пациенты</h2>
+      <div class="review-row">
+        <blockquote class="review">
+          <p>Шла с ужасом, у меня с детства паника в кресле. Сделали под седацией, проснулась — уже всё. Через три месяца поставили коронку, никто не догадывается, что зуб не мой.</p>
+          <footer>Ольга, 41 год, имплантация</footer>
+        </blockquote>
+        <blockquote class="review">
+          <p>Понравилось, что сначала показали на экране, как будет. И смету дали сразу, она не поменялась. Ходил в две клиники до этого, там такого не было.</p>
+          <footer>Игорь, 56 лет, четыре импланта</footer>
+        </blockquote>
+        <blockquote class="review">
+          <p>Виниры хотела давно, но боялась «лошадиных зубов». Примерка макетом решила всё — поправили форму два раза, пока не стало похоже на меня.</p>
+          <footer>Дарья, 29 лет, виниры</footer>
+        </blockquote>
+      </div>
+      <p class="note">Отзывы на демо-сайте вымышлены.</p>
+    </div>
+  </section>
+
+  <!-- 8. Booking -->
+  <section class="book" id="book">
+    <div class="wrap book-inner">
+      <h2 class="display">Запишитесь на&nbsp;консультацию</h2>
+      <p class="lead">Ответим в мессенджере в течение 15 минут в рабочее время, подберём удобное окно и пришлём напоминание за день.</p>
+      <div class="actions">
+        <a class="btn btn-light js-max" href="#book">Записаться в MAX</a>
+        <a class="link link-light" href="tel:+70000000000">+7 (000) 000-00-00</a>
+      </div>
+      <p class="book-meta">Барнаул, адрес вымышлен. Принимаем с понедельника по субботу, с 9 до 21.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p><b>Демо-сайт.</b> Клиника «Олива», врачи, цены, отзывы и контакты вымышлены. Изображения и видео сгенерированы нейросетью.</p>
+  <p>Сделано студией <a href="https://valora-studio.github.io/">Valora</a>. Хотите такой же для своей клиники — напишите нам.</p>
+</footer>
+
+<div class="toast" role="status" aria-live="polite" hidden>Это демо: здесь откроется бот записи в мессенджере MAX.</div>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
