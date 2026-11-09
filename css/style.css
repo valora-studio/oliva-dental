@@ -174,14 +174,6 @@ h1, h2, h3, p, figure, blockquote { margin: 0; }
 .foot { padding: 40px var(--gutter) 48px; font-size: 14px; color: var(--ink-2); display: grid; gap: 8px; }
 .foot a { color: var(--ink); }
 
-.toast {
-  position: fixed; left: 50%; bottom: 24px; z-index: 40;
-  transform: translateX(-50%); max-width: calc(100% - 32px);
-  padding: 16px 22px; border-radius: 12px;
-  background: var(--ink); color: var(--paper); font-size: 15px;
-  box-shadow: 0 10px 40px rgb(0 0 0 / .25);
-}
-
 /* ---------- Mobile ---------- */
 @media (max-width: 760px) {
   body { font-size: 16px; }

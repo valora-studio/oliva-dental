@@ -186,18 +186,10 @@
   }, { threshold: 0.2 });
   document.querySelectorAll('.service-img').forEach((el) => io.observe(el));
 
-  // ---------- Booking ----------
-  const toast = document.querySelector('.toast');
-  let toastTimer;
-  document.querySelectorAll('.js-max').forEach((a) => a.addEventListener('click', (e) => {
-    e.preventDefault();
-    toast.hidden = false;
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => { toast.hidden = true; }, 4200);
-  }));
+  // ---------- Anchor scrolling ----------
   document.querySelectorAll('a[href^="#"]').forEach((a) => a.addEventListener('click', (e) => {
     const id = a.getAttribute('href');
-    if (id.length < 2 || a.classList.contains('js-max')) return;
+    if (id.length < 2) return;
     const target = document.querySelector(id);
     if (!target) return;
     e.preventDefault();
